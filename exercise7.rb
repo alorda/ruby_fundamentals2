@@ -16,6 +16,11 @@ def cohort_plus_five_percent(hash)
   end
 end
 
+def add_all_cohorts(hash)
+  total_students = hash.each_value.inject(:+)
+  puts total_students
+end
+
 cohort_name_number(students)
 
 students[:cohort4] = 43
@@ -27,5 +32,9 @@ cohort_plus_five_percent(students)
 puts "The second cohort disappeared into the space-time continuum. Here's the new list!"
 
 #Let's call the method while deleting :cohort2 in one line.
-students.delete(:cohort2)
-cohort_name_number(students)
+puts students.delete(:cohort2)
+# cohort_name_number(students)
+#Except from this point on, :cohort2 is missing...
+
+puts "This is the total number of students from all cohorts:"
+add_all_cohorts(students)
