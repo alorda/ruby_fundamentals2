@@ -62,4 +62,4 @@ delete_cohort(students, :cohort2)
 
 #Step 7, bonus - Done
 puts "This is the total number of students from all cohorts:"
-sum_all_cohorts (students)
+sum_all_cohorts(students)
