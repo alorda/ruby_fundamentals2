@@ -21,12 +21,12 @@ end
 
 def add_a_cohort(hash, key, value)
   hash[key.to_sym] = value
-  # puts students #is this a bad idea?
+  puts hash #is this a bad idea?
 end
 
 def delete_cohort(hash, key)
   hash.delete(key)
-  # puts students
+  puts hash # puts students
 end
 
 def sum_all_cohorts(hash)
@@ -43,7 +43,7 @@ display_cohort(students)
 #Step 3 Add cohort 4 with 43 students
 puts "Let's add a cohort!"
 add_a_cohort(students, "cohort4", 43)
-puts students
+# puts students
 
 #Step 4 - Use Keys method to output cohort names DONE
 puts "These are the names of the cohorts:"
@@ -58,7 +58,7 @@ cohort_plus_five_percent(students)
 #Step 6 Delete the second cohort and display
 puts "The second cohort disappeared into the space-time continuum. Here's the new list!"
 delete_cohort(students, :cohort2)
-puts students
+# puts students
 
 #Step 7, bonus - Done
 puts "This is the total number of students from all cohorts:"
